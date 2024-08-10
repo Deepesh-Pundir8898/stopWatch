@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="timing">
+            <div class="hours time">
+                <h1>00</h1>
+                <p>Hours</p>
+            </div>
+            <div class="minutes time">
+                <h1>00</h1>
+                <p>Minutes</p>
+            </div>
+            <div class="second time">
+                <h1>00</h1>
+                <p>Seconds</p>
+            </div>
+            <div class="mini-sec time">
+                <h1>00</h1>
+                <p>Mini Seconds</p>
+            </div>
+        </div>
+        <div class="watch-button">
+            <button class="btn" value="start">Start</button>
+            <button class="btn" value="stop">Stop</button>
+            <button class="btn" value="reset">Reset</button>
+        </div>
+
+        <div class="set-timer">
+            <input type="time" step="1" class="timer">
+            <button class="btn timer-btn">Set Timer</button>
+            <audio id="timer-sound" src="audio/countdown-122700.mp3" preload="auto"></audio>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

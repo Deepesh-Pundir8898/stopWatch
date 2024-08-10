@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif ;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    padding-right: 5rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-image: url(image/view-retro-alarm-clock-nutshell-tones.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-container{
+    padding: 2rem;
+}
+.main-container .timing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.timing .time>h1{
+    margin: 0;
+    padding: 0;
+    font-size: 7rem;
+    font-weight: 600;
+    text-shadow: 3px 1px 2px #fad9b6;
+    
+}
+.timing .hours h1::after,.timing .minutes h1::after{
+    content: ":";
+}
+.timing .second h1::after{
+    content: ".";
+}
+.timing .time>p{
+    text-align:center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 2.5rem 0 0;
+    color: #332112;
+}
+.timing .mini-sec>p{
+    padding: 0 0 0 0.5rem;
+}
+.watch-button{
+    padding: 2rem 0;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    padding: 1.4rem 3.5rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color:#fad9b6;
+    color: #332112;
+    box-shadow: 0 0 10px #332112;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.03);
+}
+.set-timer{
+    margin: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    input{
+        padding: 1.4rem 3.5rem;
+        border-radius: 10px;
+        border: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        box-shadow: 0 0 10px #332112;
+
+
+    }
+}
